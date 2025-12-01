@@ -1,4 +1,18 @@
 //EJERCICIO 2
+function fct(n: Integer): Integer;
+var
+  i, f: Integer;
+begin
+  i := 0;
+  f := 1;
+  while i < n do
+  begin
+    i := i + 1;
+    f := f * i;
+  end;
+  Result := f;
+end;
+
 
 function ejercicio2_numeros(n: Integer): real;
 var
