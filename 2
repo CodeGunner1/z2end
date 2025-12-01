@@ -1,1 +1,46 @@
 //EJERCICIO 2
+
+function ejercicio2_numeros(n: Integer): real;
+var
+  x: Integer;
+  sw: Boolean;
+  cont: Integer;
+  numerador: Integer;
+  denomerador: Integer;
+  frac: real;
+  suma: real;
+begin
+  sw := True;
+  cont := 1;
+  suma := 0;
+  while n > c do
+  begin
+    c := c + 1;
+
+    numerador := cont * cont; // 1*1 = 1
+    denomerador := fct(cont);
+    cont := cont + 1;
+    frac := numerador / denomerador;
+
+    if sw = True then
+    begin
+      // verdadero
+      suma := suma - frac;
+      sw := False;
+    end
+    else
+    begin
+      // falso
+      suma := suma + frac;
+      sw := True;
+    end;
+
+  end;
+
+  Result := suma;
+
+end;
+
+
+  { LLAMADA 2  COPIAR ABAJO }
+  Edit3.Text := FloatToStr(ejercicio2_numeros(n));
